@@ -7,7 +7,7 @@ const Tickets=()=>{
 
     const fetchTickets= async()=>{
         try{
-            const response= await axios.get('http://localhost:5000/api/ticket/');
+            const response= await axios.get('https://aichatsupport-x5vaji5z.b4a.run/api/ticket/');
             setTickets(response.data.data);
         } catch(err){
             console.error('Error fetching tickets:', err);
@@ -18,7 +18,7 @@ const Tickets=()=>{
 
     const updateTicketStatus= async(id,status)=>{
         try{
-            await axios.patch(`http://localhost:5000/api/ticket/${id}/`,{
+            await axios.patch(`https://aichatsupport-x5vaji5z.b4a.run/api/ticket/${id}/`,{
                 status
             });
             fetchTickets();

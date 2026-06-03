@@ -18,7 +18,7 @@ const Chat=()=>{
     useEffect(()=>{
         const fetchHistory=async()=>{
             try{
-                const response= await axios.get('http://localhost:5000/api/chat/history');
+                const response= await axios.get('https://aichatsupport-x5vaji5z.b4a.run/api/chat/history');
                 const historyMessages=response.data.data.flatMap(msg=>([
                     {sender:'user', text:msg.userMessage},
                     {sender:'ai', text: msg.aiResponse}              
@@ -41,7 +41,7 @@ const Chat=()=>{
         setLoading(true);
 
         try{
-            const response=await axios.post('http://localhost:5000/api/chat/',{
+            const response=await axios.post('https://aichatsupport-x5vaji5z.b4a.run/api/chat/',{
                 userMessage: userInput
             });
 
