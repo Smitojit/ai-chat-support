@@ -3,8 +3,8 @@
 A full stack AI powered customer support system built with Node.js, Express.js, MongoDB, and React.js.
 
 ## Live Demo
-- Frontend: (coming soon)
-- Backend: (coming soon)
+- Frontend: https://ai-chat-support-6xbq.vercel.app
+- Backend: https://aichatsupport-x5vaji5z.b4a.run
 
 ## Features
 - Real time AI chat powered by Groq API (LLaMA 3.3 70B model)
